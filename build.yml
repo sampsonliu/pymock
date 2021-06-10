@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  pymock:
+    image: ccr.ccs.tencentyun.com/sampsonliu/pymock:test
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+      args:
+        BUILD_TYPE: PRO
+        CODE_VERSION: test
+

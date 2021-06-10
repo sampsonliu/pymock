@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  pymock:
+    image: ccr.ccs.tencentyun.com/sampsonliu/pymock:test
+    ports:
+      - 8080:8080
+      - 80:80
+    networks:
+      - server_net
+
+networks:
+  server_net:
+    ipam:
+      driver: default
+      config:
+        - subnet: "192.168.12.0/24"

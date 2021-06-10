@@ -1,0 +1,87 @@
+html {
+    height: 100%;
+}
+
+body {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+div.menu {
+    margin: 5px 0;
+}
+
+.button {
+    cursor: pointer;
+}
+span.button {
+    text-decoration: underline;
+}
+
+div.content {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+div.content-panel {
+    flex: 1 1;
+    margin: 0 10px;
+}
+
+div.heading {
+    display: flex;
+}
+
+div.heading label {
+    flex-grow: 1;
+}
+
+.tunnel-desc {
+    display: flex;
+}
+span.tag {
+    border: black solid 1px;
+    border-radius: 3px;
+    padding: 0 3px;
+    box-shadow: grey 1px 1px;
+}
+.tunnel-desc>.desc {
+    flex-grow: 1;
+}
+
+.tunnel-action {
+    display: flex;
+    flex-direction: row-reverse;
+    visibility: hidden;
+    margin: 2px;
+}
+.tunnel-action i {
+    font-size: 1.3em;
+    padding: 5px;
+}
+ul {
+    padding-inline-start: 0px;
+    list-style-type: none;
+}
+.tunnel-item {
+    padding: 5px;
+}
+.tunnel-item:hover .tunnel-action {
+    visibility: visible;
+}
+.tunnel-item:hover {
+    background: #dcdcdc;
+}
+
+li.connection-item {
+    display: flex;
+}
+li.connection-item>.desc {
+    flex-grow: 1;
+}

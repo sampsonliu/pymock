@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>PyMock Editor</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+        <link rel="stylesheet" href="fontawesome/css/solid.min.css">
+    </head>
+    <body>
+        <div class="menu">
+            <a href="/static/index.html">index</a>
+            <a href="/static/tunnel.html">tunnel</a>
+            <a href="/static/logs.html">logs</a>
+        </div>
+        <div class="content">
+            <div class="file-list">
+                <div>
+                    <button id="newFolderButton">New Folder</button>
+                    <button id="newFileButton">New File</button>
+                </div>
+                <div class="file-path" id="filePath">./</div>
+                <ul id="fileList"></ul>
+            </div>
+            <div class="file-edit">
+                <div class="file-controls">
+                    <span class="control-left" id="currentFile">&lt;scatch&gt;</scatch></span>
+                    <span class="control-right">
+                        <button id="reloadButton">reload</button>
+                        <button id="saveButton" disabled>save</button>
+                        <label>mode: <select id="modeSelect"></select></label>
+                    </span>
+                </div>
+                <div class="editor" id="editor"></div>
+            </div>
+        </div>
+
+        <script src="jquery-3.4.1.js"></script>
+        <script src="ace/ace.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

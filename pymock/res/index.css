@@ -1,0 +1,64 @@
+html {
+    height: 100%;
+}
+
+body {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+div.content {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+div.menu {
+    margin: 5px 0;
+}
+
+div.file-list {
+    flex: 300px 0;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.file-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+
+div.file-list li:hover {
+    background: rgb(189, 189, 189);
+}
+
+div.file-list li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+div.file-edit {
+    flex: 600px 1;
+    display: flex;
+    flex-direction: column;
+}
+
+div.file-edit .editor {
+    flex-grow: 1;
+}
+
+.file-controls {
+    display: flex;
+}
+
+.file-controls .control-left {
+    flex-grow: 1;
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <title>PyMock Tunnels</title>
+    <link rel="stylesheet" href="tunnel.css">
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="fontawesome/css/solid.min.css">
+</head>
+<body>
+    <div class="menu">
+        <a href="/static/index.html">index</a>
+        <a href="/static/tunnel.html">tunnel</a>
+        <a href="/static/logs.html">logs</a>
+    </div>
+    <div class="content">
+        <div class="content-panel">
+            <div class="heading">
+                <label>Tunnel Server List</label>
+                <i id="tunnelRefreshButton" class="fas fa-redo button"></i></span>
+            </div>
+            <ul id="tunnelList"></ul>
+        </div>
+        <div class="content-panel">
+            <div class="heading">
+                <label>Connection List <span id="tunnelName"></span></label>
+                <i id="connectionRefreshButton" class="fas fa-redo button"></i></span>
+            </div>
+            <ul id="connectionList"></ul>
+        </div>
+    </div>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="tunnel.js"></script>
+</body>
