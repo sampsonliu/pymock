@@ -11,5 +11,4 @@ git fetch --all
 git reset --hard origin/main
 echo "done"
 
-exec ./build.sh TEST
-
+echo sh build.sh TEST
