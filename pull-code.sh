@@ -1,5 +1,5 @@
 #/bin/sh
 set -x
-git branch
-git checkout main
-git pull
+
+git fetch --all
+git reset --hard origin/main
