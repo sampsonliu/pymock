@@ -24,6 +24,8 @@ function build()
   && docker-compose -f build.yml build \
   && docker push ccr.ccs.tencentyun.com/sampsonliu/pymock:${version} \
   && echo "build and push finish"
+  && docker images|grep ccr.ccs.tencentyun.com/sampsonliu/pymock|grep none|awk '{print $3}'|xargs docker rmi
+  && echo "docker images|grep ccr.ccs.tencentyun.com/sampsonliu/pymock|grep none|awk '{print $3}'|xargs docker rmi"
 }
 
 case $1 in
