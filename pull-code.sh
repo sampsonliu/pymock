@@ -1,5 +1,7 @@
-#/bin/sh
+#! /bin/bash
 set -x
 
-git fetch --all
 git reset --hard origin/main
+git clean -f
+git pull
+git checkout main
